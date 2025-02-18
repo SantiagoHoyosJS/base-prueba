@@ -1,0 +1,25 @@
+services:
+  python:
+    build: ./python
+    volumes:
+      - ./python:/app
+
+  javascript:
+    build: ./javascript
+    volumes:
+      - ./javascript:/app
+
+  ruby:
+    build: ./ruby
+    volumes:
+      - ./ruby/output.txt:/app/output.txt
+
+  cpp:
+    build: ./cpp
+    volumes:
+      - ./cpp/output.txt:/app/output.txt
+
+  php:
+    build: ./php
+    volumes:
+      - ./php/output.txt:/app/output.txt
