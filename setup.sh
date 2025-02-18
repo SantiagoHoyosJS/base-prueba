@@ -29,5 +29,5 @@ docker exec -it dind-container sh -c "
 echo "Mostrando logs de la aplicación..."
 docker exec -it dind-container sh -c "
     cd app &&
-    docker-compose logs -f --no-color
+    timeout 10 docker-compose logs -f --no-color
 "
